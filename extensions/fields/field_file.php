@@ -195,7 +195,7 @@ class field_file
 			//判断文件大小
 			if ($_FILES[$field['name']]['size'] > setting('attachment_maxupload'))
 			{
-				$extension_valid = TRUE;
+				$extension_valid = FALSE;
 			} 
 			
 			if ($extension_valid)
