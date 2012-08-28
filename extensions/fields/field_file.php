@@ -39,7 +39,7 @@
 class field_file
 {
 	/**
-	 * k
+	 * $k
 	 * 自定义的字段标识，需要唯一, 非官方开发请自由加上前缀
 	 * 
 	 * @var string
@@ -48,7 +48,7 @@ class field_file
 	public $k = 'file';
 	
 	/**
-	 * v
+	 * $v
 	 * 自定义的字段名称
 	 *
 	 * @var string
@@ -142,7 +142,7 @@ class field_file
 	 * @param   array $field 同上
 	 * @param   array $condition ,引用传递，记录搜索条件的数组，此数组直接用于$this->db->where(),区别于下面的$where
 	 * @param   array $where, 引用传递， 简单的对于GET数据的过滤后的产物，用于回填搜索的表单
-	 * @param   string $suffix 引用船体，用于拼接搜索条件，此货的产生现在看来完全没有必要，下个版本必将消失
+	 * @param   string $suffix 引用传递，用于拼接搜索条件，此货的产生现在看来完全没有必要，下个版本必将消失
 	 * @return  void
 	 */
 	public function on_do_search($field, & $condition, & $where, & $suffix )
