@@ -216,7 +216,7 @@ class field_file
 				{
 					$upload['image'] = (in_array($upload['type'], array('jpg', 'gif', 'png', 'jpeg', 'bmp')) ? 1 : 0);
 					//可自行根据需要进行缩略图处理
-					$CI->db->insert('dili_attachments', $upload);
+					$CI->db->insert('attachments', $upload);
 					if ($aid = $CI->db->insert_id())
 					{
 						//已上传成功并已插入数据库
